@@ -1,7 +1,8 @@
 <html>
 <title>RasEthiopai</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
-<head><base target="iframe"</head>
+<head>  <meta name="viewport" content="device-width", initial-scale=1">
+<base target="iframe"</head>
 <body><div class="wrapper"><div class="heading"><p class="paragraph">RasEthioopia bar and lounge<br>
 Welcome to The number ethiopian restaurant in Saint paul minnesota</p>
 
@@ -28,7 +29,16 @@ cultural and religious history that maintains many of its customs to this day.</
 </div>
 <hr>
 <div class="footter">RasEthiopia<br>2516 7th St W<br>
-Saint Paul, MN 55116<br>&copy right reserved 2018</div></div>
-</body>
+Saint Paul, MN 55116<br>&copy right reserved 2018
+<span id="time"></span></div>
+</div>
+<script>
+var d = new Date();
 
+var datestring = d.getDate()  + "-" + (d.getMonth()+1) + "-" + d.getFullYear() + " " +
+d.getHours() + ":" + d.getMinutes();
+document.getElementById("time").innerHTML=Date(datestring);
+update(datestring);
+</script>
+</body>
 </html>

@@ -6,7 +6,6 @@ html{
 margin:20px 20px 20px 20px;
 padding:0px;
 height:100%;
-backgroound-color:red;
 overflow:scroll;
 
 }
@@ -69,7 +68,7 @@ overflow:scroll;
 }
 
 .footter{
-display:block; 
+position:relative;
 width:100%;
 height:50px;
 color:white;
@@ -78,6 +77,11 @@ bottom:0px;
 text-align:center;
 font-weight:bold;
 padding:15px 15px 15px 15px;
+}
+#time{
+position:absolute;
+right:100px;
+top:50px;
 }
 .dropbtn {
     background-color: black;
@@ -123,7 +127,10 @@ top:31px;
 .dropdown:hover .dropbtn {
     background-color: black;
 }
-
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
 
 
 
